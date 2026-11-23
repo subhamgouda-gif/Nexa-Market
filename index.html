@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thoughtful home and lifestyle finds for the everyday. Shop Nexa Market's curated collection.">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Nexa Market | Thoughtful finds for home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Thoughtful finds for home <span aria-hidden="true">·</span> Free shipping on orders over INR 2,500</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Nexa Market home">
+                <span class="brand-mark" aria-hidden="true">N</span>
+                <span>NEXA <span class="brand-light">MARKET</span></span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-links" id="primary-navigation">
+                <a href="#shop">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#our-story">Our story</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="nav-actions">
+                <a class="search-shortcut" href="#shop" aria-label="Search products">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                </a>
+                <button class="cart-button" id="open-cart" type="button" aria-label="Open shopping bag, 0 items">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+                    <span class="cart-label">Bag</span>
+                    <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero section-wrap">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE MORE HOME</p>
+                <h1>Make room for <em>everyday</em> good things.</h1>
+                <p class="hero-description">Considered pieces, natural textures, and small comforts that make your space feel like yours.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#shop">Shop the collection <span aria-hidden="true">↗</span></a>
+                    <a class="quiet-link" href="#our-story">Get to know Nexa <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-stars" aria-hidden="true">★★★★★</span>
+                    <span>Thoughtful finds, chosen with care</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Warm living room with natural textures and neutral decor">
+                <div class="hero-sticker">
+                    <span>LIVE</span>
+                    <span>A LITTLE</span>
+                    <span>LIGHTER</span>
+                </div>
+                <div class="hero-caption">
+                    <span>THE SLOW LIVING EDIT</span>
+                    <span>01 / 04</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="promise-strip" aria-label="Nexa Market promises">
+            <div><span class="promise-icon" aria-hidden="true">✳</span><span>Made for everyday living</span></div>
+            <div><span class="promise-icon" aria-hidden="true">↗</span><span>Free delivery over INR 2,500</span></div>
+            <div><span class="promise-icon" aria-hidden="true">♡</span><span>Thoughtfully picked, always</span></div>
+        </section>
+
+        <section class="section-wrap categories-section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR FEEL</p>
+                    <h2>Make yourself <em>at home.</em></h2>
+                </div>
+                <a class="quiet-link" href="#shop">Shop everything <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="category-grid">
+                <button class="category-card category-living" type="button" data-category-jump="living">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Living</span><span aria-hidden="true">↗</span></span>
+                </button>
+                <button class="category-card category-kitchen" type="button" data-category-jump="kitchen">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Kitchen & dining</span><span aria-hidden="true">↗</span></span>
+                </button>
+                <button class="category-card category-decor" type="button" data-category-jump="decor">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Decor & details</span><span aria-hidden="true">↗</span></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <div class="section-wrap shop-inner">
+                <div class="section-heading shop-heading">
+                    <div>
+                        <p class="eyebrow">THE GOOD STUFF</p>
+                        <h2>Little things, <em>big feeling.</em></h2>
+                    </div>
+                    <label class="search-field">
+                        <span class="sr-only">Search products</span>
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                        <input id="product-search" type="search" placeholder="Find your next favorite" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="shop-toolbar">
+                    <div class="filter-list" role="group" aria-label="Filter products by category">
+                        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All finds</button>
+                        <button class="filter-button" type="button" data-filter="living" aria-pressed="false">Living</button>
+                        <button class="filter-button" type="button" data-filter="kitchen" aria-pressed="false">Kitchen</button>
+                        <button class="filter-button" type="button" data-filter="decor" aria-pressed="false">Decor</button>
+                        <button class="filter-button" type="button" data-filter="lighting" aria-pressed="false">Lighting</button>
+                    </div>
+                    <p class="results-count" id="results-count" aria-live="polite">8 thoughtful finds</p>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+                    <article class="product-card" data-product-id="linen-throw" data-category="living" data-price="2490">
+                        <div class="product-image">
+                            <span class="product-badge">Bestseller</span>
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Soft neutral throw styled on a cozy sofa" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Woven Linen Throw to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Living</span><span>Natural linen</span></div>
+                        <div class="product-title-row"><h3>Woven Linen Throw</h3><span class="product-price">INR 2,490</span></div>
+                        <p class="product-detail">A softer landing for slow evenings.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="stoneware-set" data-category="kitchen" data-price="1890">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Small batch</span>
+                            <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=900&q=80" alt="Handmade ceramic stoneware plates and bowls" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Everyday Stoneware Set to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Hand-finished</span></div>
+                        <div class="product-title-row"><h3>Everyday Stoneware Set</h3><span class="product-price">INR 1,890</span></div>
+                        <p class="product-detail">The pieces you'll reach for every day.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="arc-table-lamp" data-category="lighting" data-price="3290">
+                        <div class="product-image">
+                            <span class="product-badge">New</span>
+                            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80" alt="Sculptural table lamp casting a warm glow" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Arc Table Lamp to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Lighting</span><span>Warm glow</span></div>
+                        <div class="product-title-row"><h3>Arc Table Lamp</h3><span class="product-price">INR 3,290</span></div>
+                        <p class="product-detail">A little pool of light, right where you need it.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="clay-vase" data-category="decor" data-price="1290">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Made slowly</span>
+                            <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=80" alt="Sculptural clay vase with a simple branch" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Sunday Clay Vase to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Decor</span><span>Artisan-made</span></div>
+                        <div class="product-title-row"><h3>Sunday Clay Vase</h3><span class="product-price">INR 1,290</span></div>
+                        <p class="product-detail">Beautiful with a branch, or all on its own.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="woven-basket" data-category="living" data-price="1590">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80" alt="Natural woven storage basket in a calm living space" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Sunday Woven Basket to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Living</span><span>Natural weave</span></div>
+                        <div class="product-title-row"><h3>Sunday Woven Basket</h3><span class="product-price">INR 1,590</span></div>
+                        <p class="product-detail">A home for the little things that wander.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="glass-carafe" data-category="kitchen" data-price="990">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Everyday favorite</span>
+                            <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=900&q=80" alt="Dining table styled with everyday serving pieces" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Clear Day Carafe to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Recycled glass</span></div>
+                        <div class="product-title-row"><h3>Clear Day Carafe</h3><span class="product-price">INR 990</span></div>
+                        <p class="product-detail">A reason to make the table feel special.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="oak-board" data-category="kitchen" data-price="1390">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=900&q=80" alt="Wooden serving board ready for a shared meal" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Gather Oak Serving Board to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Solid oak</span></div>
+                        <div class="product-title-row"><h3>Gather Oak Serving Board</h3><span class="product-price">INR 1,390</span></div>
+                        <p class="product-detail">Made for snacks, supper, and one more guest.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="candle-duo" data-category="decor" data-price="790">
+                        <div class="product-image">
+                            <span class="product-badge">Little treat</span>
+                            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80" alt="Hand-poured candle in a simple glass jar" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add After Hours Candle Duo to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Decor</span><span>Hand-poured</span></div>
+                        <div class="product-title-row"><h3>After Hours Candle Duo</h3><span class="product-price">INR 790</span></div>
+                        <p class="product-detail">A softer end to a very full day.</p>
+                    </article>
+                </div>
+
+                <p class="empty-results" id="empty-results" hidden>No finds match that search. Try another word or category.</p>
+                <p class="demo-note">Sample products and prices for this storefront demo.</p>
+            </div>
+        </section>
+
+        <section class="offer-banner section-wrap">
+            <div class="offer-image">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Relaxed home interior with warm natural materials" loading="lazy">
+            </div>
+            <div class="offer-copy">
+                <p class="eyebrow">A LITTLE SOMETHING EXTRA</p>
+                <h2>Good things are even better <em>together.</em></h2>
+                <p>Make a set of any two kitchen favorites and take 10% off your pair.</p>
+                <a class="button button-light" href="#shop" data-category-jump="kitchen">Find your pair <span aria-hidden="true">↗</span></a>
+                <span class="offer-fineprint">Demo offer — sample promotion, terms not connected.</span>
+            </div>
+        </section>
+
+        <section class="section-wrap story-section" id="our-story">
+            <div class="story-copy">
+                <p class="eyebrow">A NOTE FROM NEXA</p>
+                <h2>Less, but <em>more meaningful.</em></h2>
+                <p>We believe a home isn't made in a day. It's collected slowly—in useful pieces, favorite textures, and the objects that make ordinary moments feel like your own.</p>
+                <a class="quiet-link" href="#categories">Find your kind of home <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=1100&q=85" alt="Sunlit home with carefully chosen furniture and plants" loading="lazy">
+                <span class="story-caption">GOOD DESIGN SHOULD FEEL GOOD TO LIVE WITH.</span>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="section-wrap">
+                <div class="section-heading reviews-heading">
+                    <div>
+                        <p class="eyebrow">KIND WORDS</p>
+                        <h2>Notes from <em>your homes.</em></h2>
+                    </div>
+                    <p class="review-disclaimer">Sample reviews for this storefront demo.</p>
+                </div>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“The little details made my living room feel like me. The throw is ridiculously soft.”</blockquote>
+                        <p class="review-author">Mira K. <span>· Homebody</span></p>
+                    </article>
+                    <article class="review-card review-card-featured">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“Beautifully packed, lovely quality, and the stoneware is already part of our Sunday routine.”</blockquote>
+                        <p class="review-author">Rohan S. <span>· Weekend cook</span></p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“Finally, useful things that don't feel ordinary. I'll be back for the lamp.”</blockquote>
+                        <p class="review-author">Anya P. <span>· Design lover</span></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section section-wrap">
+            <div>
+                <p class="eyebrow">A GOOD NOTE, NOW AND THEN</p>
+                <h2>A little inspiration <em>in your inbox.</em></h2>
+                <p>New finds, thoughtful spaces, and the occasional treat.</p>
+            </div>
+            <form class="newsletter-form" id="newsletter-form">
+                <label class="sr-only" for="newsletter-email">Your email address</label>
+                <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+                <button type="submit" aria-label="Join the Nexa newsletter">Join us <span aria-hidden="true">→</span></button>
+                <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite">Demo only — signups are not sent or stored.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-wrap footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="#home" aria-label="Nexa Market home">
+                    <span class="brand-mark" aria-hidden="true">N</span>
+                    <span>NEXA <span class="brand-light">MARKET</span></span>
+                </a>
+                <p>Thoughtful finds for the place you call home.</p>
+            </div>
+            <div class="footer-links">
+                <div><h2>Explore</h2><a href="#shop">Shop all</a><a href="#categories">Categories</a><a href="#reviews">Reviews</a></div>
+                <div><h2>Stay in touch</h2><a href="#our-story">Our story</a><a href="#newsletter-form">Newsletter</a><a href="#home">Back to top ↑</a></div>
+            </div>
+        </div>
+        <div class="section-wrap footer-bottom">
+            <span>© 2026 Nexa Market · Storefront demo</span>
+            <span>Made for the everyday.</span>
+        </div>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title" hidden>
+        <div class="cart-header">
+            <div><p class="eyebrow">YOUR GOOD THINGS</p><h2 id="cart-title">Shopping bag <span id="drawer-count">(0)</span></h2></div>
+            <button class="cart-close" id="close-cart" type="button" aria-label="Close shopping bag">×</button>
+        </div>
+        <div class="cart-content">
+            <p class="cart-empty" id="cart-empty">Your bag is taking a quiet moment. Add something lovely to get started.</p>
+            <ul class="cart-items" id="cart-items"></ul>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">INR 0</strong></div>
+            <p class="cart-demo-note">Demo bag only. Checkout and payments are not connected.</p>
+            <button class="button button-dark checkout-button" type="button" disabled>Checkout <span aria-hidden="true">↗</span></button>
+            <button class="continue-shopping" id="continue-shopping" type="button">Continue browsing</button>
+        </div>
+    </aside>
+    <p class="sr-only" id="cart-status" role="status" aria-live="polite"></p>
+</body>
+</html>
